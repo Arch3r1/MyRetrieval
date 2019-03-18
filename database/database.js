@@ -10,7 +10,7 @@ var testdb = {
     "dialect": "mysql"
 }
 
-var testdb = new Sequelize(testdb.database, testdb.username, testdb.password, {
+var db = new Sequelize(testdb.database, testdb.username, testdb.password, {
   
   host: testdb.host,
   dialect: testdb.dialect,
@@ -19,5 +19,5 @@ var testdb = new Sequelize(testdb.database, testdb.username, testdb.password, {
 });
 
 module.exports = {
-  testdb
+  db
 };
